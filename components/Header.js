@@ -10,8 +10,8 @@ const Header = () => {
     setSeed(Math.floor(Math.random() * 5000));
   }, []);
   return (
-    <header className="flex w-full p-5 justify-between text-sm text-gray-700">
-      <div className="flex space-x-4 items-center">
+    <header className="flex w-full p-5 sm:justify-between justify-end text-sm text-gray-700">
+      <div className="sm:flex space-x-4 items-center hidden">
         <p className="link">About</p>
         <p className="link">Store</p>
       </div>
