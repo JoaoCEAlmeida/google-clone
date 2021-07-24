@@ -1,0 +1,32 @@
+import SearchHeaderOption from "./SearchHeaderOption";
+
+import {
+  DotsVerticalIcon,
+  MapIcon,
+  NewspaperIcon,
+  PhotographIcon,
+  PlayIcon,
+  SearchIcon,
+} from "@heroicons/react/outline";
+
+const SearchHeaderOptions = () => {
+  return (
+    <div className="flex w-full text-gray-700 justify-evenly text-sm lg:text-base lg:justify-start lg:space-x-36 lg:pl-52 border-b-[1px]">
+      <div className="flex space-x-6 pb-1">
+        <SearchHeaderOption Icon={SearchIcon} title="All" selected />
+        <SearchHeaderOption Icon={PhotographIcon} title="Images" />
+        <SearchHeaderOption Icon={PlayIcon} title="Videos" />
+        <SearchHeaderOption Icon={NewspaperIcon} title="News" />
+        <SearchHeaderOption Icon={MapIcon} title="Maps" />
+        <SearchHeaderOption Icon={DotsVerticalIcon} title="More" />
+      </div>
+
+      <div className="sm:flex space-x-4 hidden">
+        <p className="link">Settings</p>
+        <p className="link">Tools</p>
+      </div>
+    </div>
+  );
+};
+
+export default SearchHeaderOptions;

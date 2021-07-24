@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 import Image from "next/image";
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 
 import { SearchIcon } from "@heroicons/react/outline";
 import { MicrophoneIcon } from "@heroicons/react/solid";
@@ -45,6 +45,9 @@ const Body = () => {
           I'm feeling lucky
         </button>
       </div>
+      <button hidden type="submit" onClick={search}>
+        Search
+      </button>
     </form>
   );
 };
