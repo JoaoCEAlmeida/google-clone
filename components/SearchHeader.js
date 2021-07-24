@@ -42,6 +42,7 @@ const SearchHeader = () => {
             type="text"
             placeholder="Search"
             className="flex-grow w-full outline-none"
+            defaultValue={router.query.term}
           />
           <XIcon
             className="h-7 sm:mr-3 text-gray-500 cursor-pointer transition duration-150 transform hover:scale-125"
